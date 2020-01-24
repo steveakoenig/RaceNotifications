@@ -8,9 +8,6 @@ class SMSClient:
         account_sid = os.getenv('TWILIO_ACCOUNT_SID')
         auth_token = os.getenv('TWILIO_AUTH_TOKEN')
         self.twilio_number = os.getenv('TWILIO_PHONE_NUMBER')
-        print(account_sid)
-        print(auth_token)
-        print(self.twilio_number)
 
         self.client = Client(account_sid, auth_token)
 
